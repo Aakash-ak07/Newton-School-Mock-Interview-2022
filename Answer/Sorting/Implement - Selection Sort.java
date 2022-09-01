@@ -12,15 +12,16 @@ class Main {
   {
       for(int i = 0; i < n-1; i++) 
       {
-        int smallest = i;
-        for(int j = i+1; j < n; j++) 
+        int smallest = i;			//samllest element store index
+        for(int j = i+1; j < n; j++) 		// j = i + 1 because we compare 1 and 2 element
         {
           if(arr[j] < arr[smallest]) 
           {
-            smallest = j;
+            smallest = j;			//if arr[j] samllar then arr[i] then we store j in smaller.
           }
         }
-	        int swap = arr[smallest];
+	      	//swpa the element
+	        int swap = arr[smallest];	
 	        arr[smallest] = arr[i];
 	        arr[i] = swap;
       }
