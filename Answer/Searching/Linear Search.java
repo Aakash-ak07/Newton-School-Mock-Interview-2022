@@ -32,7 +32,7 @@ class Main {
         {
           arr[i] = sc.nextInt();
         }
-        int result = linearSearch(arr, target, 0, n);
+        int result = linearSearch(arr, target, 0, n-1);
         if (result == -1)
             System.out.print("Element is not present");
         else
