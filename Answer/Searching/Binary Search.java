@@ -1,5 +1,5 @@
-// Binary Search   (Recursion method)
-//Time Complexity = O(logn)
+// Binary Search : (Recursion method)
+// Time Complexity = O(logn)
 // Binary Search used sorted Array. They Divide Array in 2 parts (for find mid value). 
 // If value of search key is less than in mid value, they find result in lower half, otherwise they find value in upper half. 
 
