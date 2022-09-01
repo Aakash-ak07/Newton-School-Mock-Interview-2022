@@ -6,30 +6,31 @@ import java.io.*;
 
 class Main
 {
-	public static void swap(int[] arr, int a, int b)
+    public static void swap(int[] arr, int a, int b)
     {
         int temp = arr[a];
         arr[a] = arr[b];
         arr[b] = temp;
     }
+  
     public static void missingAndRepet(int[] arr, int n)
     {
     	int repetElement = 0;
     	int missingElement = 0;
     	 
     	int i = 0;
-    	while(i < n)
+    	while(i < n)    //If the element is on its correct position
     	{
     		if (arr[i] == arr[arr[i] - 1])
     		{
     			i++;
     		}
-    		else
+    		else        // If it is not at its correct position then  // place it to its correct position.
     		{
     			swap(arr, i, arr[i] - 1);
     		}
     	}
-    	for( i = 0; i < n; i++)
+    	for( i = 0; i < n; i++)   // Find repeating and missing element.
     	{
     		if(arr[i] != i+1)
     		{
@@ -40,17 +41,18 @@ class Main
     	}
     	System.out.println("Repeating: " + repetElement + " \nMissing: " + missingElement); 
     }
-	public static void main (String[] args) 
-	{
-		Scanner sc = new Scanner(System.in);
-		int n = sc.nextInt();
-		int[] arr = new int[n];
-		for(int i = 0; i < n; i++)
-    	{
-    		arr[i] = sc.nextInt();
-    	}
-    	missingAndRepet(arr, n);
-	}
+  
+    public static void main (String[] args) 
+    {
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        int[] arr = new int[n];
+        for(int i = 0; i < n; i++)
+        {
+          arr[i] = sc.nextInt();
+        }
+        missingAndRepet(arr, n);
+    }
 }
 
 // Input:
