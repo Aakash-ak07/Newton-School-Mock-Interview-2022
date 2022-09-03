@@ -1,4 +1,6 @@
 //Reversing the Linked List
+// Time Complexity: O(n) 
+// Auxiliary Space: O(1)
 
 import java.util.LinkedList;
 import java.util.Scanner;
