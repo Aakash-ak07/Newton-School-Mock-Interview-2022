@@ -18,11 +18,11 @@ public class Main
     // Helper function to print a given linked list
     public static void printList(Node head)
     {
-        Node data = head;
-        while (data != null)
+        Node print = head;
+        while (print != null)
         {
-            System.out.print(ptr.data + " ");
-            data = data.next;
+            System.out.print(print.data + " ");
+            data = print.next;
         }
     }
     public static Node ReverseLinkedList(Node head)
@@ -40,7 +40,6 @@ public class Main
     public static void main(String[] args)
     {
     	LinkedList list = new LinkedList();
-    	
     	Scanner sc = new Scanner(System.in);
         int size = sc.nextInt();
         int keys[] = new int[size];
