@@ -24,7 +24,7 @@ public class Main
         while (print != null)
         {
             System.out.print(print.data + " ");
-            data = print.next;
+            print = print.next;
         }
     }
     public static Node ReverseLinkedList(Node head)
