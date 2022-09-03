@@ -1,4 +1,4 @@
-/* package whatever; // don't place package name! */
+//Reversing the Linked List
 
 import java.util.LinkedList;
 import java.util.Scanner;
