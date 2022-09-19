@@ -54,10 +54,10 @@ class LinkedList {
     {
         LinkedList list = new LinkedList();
 	
-        head = list.insert(head, 10);
-        head = list.insert(head, 20);
-        head = list.insert(head, 30);
         head = list.insert(head, 40);
+        head = list.insert(head, 30);
+        head = list.insert(head, 20);
+        head = list.insert(head, 10);
 //      list.head = new Node(10);
 //      list.head.next = new Node(25);
 //      list.head.next.next = new Node(45);
