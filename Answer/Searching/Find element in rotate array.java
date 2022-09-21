@@ -20,11 +20,13 @@ class Main
         /* If arr[l...mid] first subarray is sorted */
         if (arr[left] <= arr[mid]) 
         {
+	       //left part sorted....
             if (key >= arr[left] && key <= arr[mid])
                 return search(arr, left, mid - 1, key);
             
             return search(arr, mid + 1, right, key);
         }
+	  //right part sorted....
         if (key >= arr[mid] && key <= arr[right])
             return search(arr, mid + 1, right, key);
  
