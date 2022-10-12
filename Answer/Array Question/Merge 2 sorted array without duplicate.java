@@ -23,20 +23,24 @@ class Main
         Arrays.sort(res);
     }
       
-    public static int removeDuplicates(int res[], int a)
+    public static int removeDuplicates(int arr[], int n)
     {
-        if(a == 0 || a == 1 )
+        // if(array size if 0 or 1 array is already sorted)
+        if(n == 0 || n == 1 )
         {
-          return a;
+          return n;
         }
         int j= 0 ;
         
-        for(int i = 0; i < a - 1; i++)
+        // check if the ith element is not equal to 
+        // the (i+1)th element, then add that element
+        // at the jth index in the same array
+        for(int i = 0; i < n - 1; i++)
         {
-            if(res[i] != res [i + 1])
-                res[j++] = res [i];
+            if(arr[i] != arr[i + 1])
+                arr[j++] = arr[i];
         }
-        res[j++] = res [a - 1];
+        arr[j++] = arr[n - 1];
         return j;
     }
       
