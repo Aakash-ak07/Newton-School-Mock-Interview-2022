@@ -43,7 +43,7 @@ public static int[] quickSort(int arr[], int start, int end)
       return arr;
 }
  public static int partision(int [] arr, int low, int high){
-       int pivot1 = arr[high];
+       int pivot = arr[high];
        int i=low;
 
        for(int j=low;j<high;j++){
