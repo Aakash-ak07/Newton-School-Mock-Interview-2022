@@ -28,8 +28,8 @@ class Main {
       for(int p = 0; p < arr.length; p++)
       {
         System.out.print(arr[p]+" ");
-          System.out.print("");
       }
+      System.out.println("");
   }
 
   public static void main (String[] args) {
