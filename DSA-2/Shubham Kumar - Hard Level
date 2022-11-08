@@ -1,0 +1,5 @@
+"Suppose you are given two sorted linked list. Merge two linked lists in sorted order, assume no repetition of numbers(duplicate numbers) in linked list:
+Eg: 
+I/p 1->2->4->5   3->6->8->9->10
+
+o/p   1->2->3->4->5->6->8->9->10"
